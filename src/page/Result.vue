@@ -243,15 +243,24 @@ export default {
       }
 
       axios
-        .post('https://skripsi-fauzan.000webhostapp.com/pencarian/savedata', {
-          namapencari: this.form.name,
-          type: this.form.type,
-          value:
-            this.form.type === 'name'
-              ? this.form.nameSearch
-              : this.form.nikSearch,
-          hppencari: this.form.phoneNumber,
-        })
+        .post(
+          'https://skripsi-fauzan.000webhostapp.com/pencarian/savedata',
+          {
+            namapencari: this.form.name,
+            type: this.form.type,
+            value:
+              this.form.type === 'name'
+                ? this.form.nameSearch
+                : this.form.nikSearch,
+            hppencari: this.form.phoneNumber,
+          },
+          {
+            headers: {
+              'Content-Type':
+                'application/x-www-form-urlencoded;charset=UTF-8,application/json',
+            },
+          },
+        )
         .then((response) => {
           console.log(response.data)
           alert(
