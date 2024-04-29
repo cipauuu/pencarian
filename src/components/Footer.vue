@@ -3,7 +3,7 @@
     <b-container class="bg-warning footer py-3" fluid>
       <b-row>
         <b-col class="text-center">
-          <p class="mb-0">Skripsi: Citra Fauzan Alqodri - 16/394078/PA/17169</p>
+          <p class="mb-0">Citra Fauzan Alqodri - 06.2023.1.82004</p>
         </b-col>
       </b-row>
     </b-container>
