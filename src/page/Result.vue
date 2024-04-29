@@ -164,7 +164,7 @@ export default {
     },
     searchData(type, value) {
       axios
-        .get('https://skripsi-fauzan.000webhostapp.com/pencarian/result', {
+        .get('http://localhost/website/pencarian/result', {
           params: {
             type: type,
             value: value,
@@ -244,7 +244,7 @@ export default {
 
       axios
         .post(
-          'https://skripsi-fauzan.000webhostapp.com/pencarian/savedata',
+          'http://localhost/website/pencarian/savedata',
           {
             namapencari: this.form.name,
             type: this.form.type,

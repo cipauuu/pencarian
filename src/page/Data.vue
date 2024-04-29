@@ -60,7 +60,7 @@ export default {
     },
     getKorbanData(id) {
       axios
-        .get('https://skripsi-fauzan.000webhostapp.com/pencarian/datakorban', {
+        .get('http://localhost/website/pencarian/datakorban', {
           params: {
             id: id,
           },
@@ -86,7 +86,7 @@ export default {
     },
     getPoskoData(id) {
       axios
-        .get('https://skripsi-fauzan.000webhostapp.com/pencarian/dataposko', {
+        .get('http://localhost/website/pencarian/dataposko', {
           params: {
             id: id,
           },
